@@ -1,0 +1,224 @@
+/* ------------------------------------------------------
+   GLOBAL STYLING — PASTEL SKY AESTHETIC
+-------------------------------------------------------*/
+body {
+    font-family: 'Elsie';
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header + Footer */
+header {
+    padding: 20px;
+    font-size: 2rem;
+}
+footer {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* ------------------------------------------------------
+   HOMEPAGE — OVAL LINKS IN STAIRCASE LAYOUT
+-------------------------------------------------------*/
+.sky {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10%;
+}
+
+.home-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 40px 120px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    margin: 20px 0;
+}
+
+.home-link:hover {
+    transform: scale(1.1);
+}
+
+/* Staircase positions */
+.link1 { background: #f3e461; margin-left: 0; }
+.link2 { background: #ffb6c1; margin-left: 60px; }
+.link3 { background: #c694f8; margin-left: 120px; }
+.link4 { background: #ffdeb3; margin-left: 180px; } /* soft pastel orange */
+
+
+
+/* ------------------------------------------------------
+   FLOATING CLOUD BACKGROUND ANIMATION
+-------------------------------------------------------*/
+.cloud {
+    position: absolute;
+    opacity: 0.5;
+    animation: drift 60s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes drift {
+    from { left: -300px; }
+    to { left: 110%; }
+}
+
+/* Sizes for clouds */
+.cloud.small { width: 150px; top: 20%; }
+.cloud.medium { width: 220px; top: 40%; }
+.cloud.large { width: 300px; top: 60%; }
+
+/* ------------------------------------------------------
+   RETURN-HOME CLOUD BUTTON
+-------------------------------------------------------*/
+.return-home {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 20px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+    z-index: 9999;
+}
+
+.return-home:hover {
+    transform: scale(1.1);
+}
+
+/* ------------------------------------------------------
+   WORD MIXER GAME PAGE
+-------------------------------------------------------*/
+.game-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.game-container input {
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    border: none;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.game-container button {
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.game-container button:hover {
+    transform: scale(1.05);
+}
+
+#result {
+    font-size: 8rem;
+    margin-top: 50px;
+}
+
+
+/* ------------------------------------------------------
+   RESUME SECTION STYLING — CENTERED LISTS
+-------------------------------------------------------*/
+.resume-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 700px;
+    text-align: center; /* center the section content */
+}
+
+/* Center lists inside the section but keep bullets/numbers readable */
+.resume-section ul,
+.resume-section ol {
+    display: inline-block;  /* shrink to content width */
+    text-align: left;       /* bullets/numbers stay left-aligned inside */
+    margin: 10px auto;      /* center the list block */
+    padding-left: 20px;     /* space from edge for bullets/numbers */
+}
+
+/* Optional: pastel-colored bullets/numbers for fun aesthetic */
+
+/* ------------------------------------------------------
+   LOVE PAGE STYLING
+-------------------------------------------------------*/
+.love-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.love-box ul {
+    list-style-type: disc;
+    text-align: left; /* bullets left-aligned inside centered box */
+    display: inline-block;
+    margin: 10px auto;
+    padding-left: 25px;
+}
+
+.love-image {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.love-image {
+    width: 280px;
+    max-width: 90%;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.love-box iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
